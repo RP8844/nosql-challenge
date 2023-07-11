@@ -16,10 +16,10 @@ Use NoSQL_setup_starter.ipynb for this section of the challenge.
 
 4. Confirm that you created the database and loaded the data properly:
 
-   -List the databases you have in MongoDB. Confirm that uk_food is listed.
-   -List the collection(s) in the database to ensure that establishments is there.
-   -Find and display one document in the establishments collection using find_one and display with pprint.
-   -Assign the establishments collection to a variable to prepare the collection for use.
+   - List the databases you have in MongoDB. Confirm that uk_food is listed.
+   - List the collection(s) in the database to ensure that establishments is there.
+   - Find and display one document in the establishments collection using find_one and display with pprint.
+   - Assign the establishments collection to a variable to prepare the collection for use.
    
 # Part 2: Update the Database
 Use NoSQL_setup_starter.ipynb for this section of the challenge.
@@ -74,19 +74,19 @@ Use NoSQL_analysis_starter.ipynb for this section of the challenge.
 
 Some notes to be aware of while you are exploring the dataset:
 
--RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
-      -Note: This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating. We will coerce non-numeric values to nulls during the database setup before converting ratings to integers.
--The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
+- RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
+      - Note: This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating. We will coerce non-numeric values to nulls during the database setup before converting ratings to integers.
+- The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
 
 Use the following questions to explore the database, and find the answers, so you can provide them to the magazine editors.
 
 Unless otherwise stated, for each question:
 
-   -Use count_documents to display the number of documents contained in the result.
+   - Use count_documents to display the number of documents contained in the result.
 
-   -Display the first document in the results using pprint.
+   - Display the first document in the results using pprint.
 
-   -Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
+   - Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
 
    1. Which establishments have a hygiene score equal to 20?
    2. Which establishments in London have a RatingValue greater than or equal to 4?
